@@ -1,5 +1,6 @@
 :root {
     --page-color-blue: #2d5c88;
+    --page-color-light-blue: #abbecf;
     --page-color-gray: #4e4e4e;
     --page-color-light-gray: #8e8e8e;
     --page-color-white: #ffffff;
@@ -57,7 +58,7 @@ header .search-container .search-icon {
 main {
     display: grid;
     grid-template-columns: auto 200px;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -96,9 +97,6 @@ main .links-column figure img {
     width: 100%;
 }
 
-main .info-column {
-    background-color: green;
-}
 
 #main-slider .main-slider-image {
     width: 100%;
@@ -111,6 +109,17 @@ main .info-column {
 #main-slider nav .thumbnail {
     margin-right: 2px;
     cursor: pointer;
+    border-bottom: 4px solid transparent;
+    transition: transform 0.2s;
+}
+
+#main-slider nav .thumbnail.selected {
+    border-bottom-color: var(--page-color-blue);
+}
+
+#main-slider nav .thumbnail:hover:not(.selected) {
+    border-bottom-color: var(--page-color-light-blue);
+    transform: scale(1.05);
 }
 
 #main-slider nav .thumbnail:last-of-type {
@@ -136,7 +145,7 @@ main .info-column {
     flex: 0 1 calc(32% - 10px);
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 900px) {
     #cards-container .card {
         flex: 0 1 calc(50% - 20px);
     }
