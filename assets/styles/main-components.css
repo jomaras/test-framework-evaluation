@@ -137,49 +137,20 @@ main .links-column figure img {
     flex-wrap: wrap;
 }
 
-#cards-container .card {
-    padding: 5px;
-    margin: 5px;
-    text-align: justify;
-    background-color: lightgray;
-    position: relative;
+#cards-container custom-card {
     flex: 0 1 calc(32% - 10px);
 }
 
 @media screen and (max-width: 900px) {
-    #cards-container .card {
+    #cards-container custom-card {
         flex: 0 1 calc(50% - 20px);
     }
 }
 
 @media screen and (max-width: 500px) {
-    #cards-container .card {
+    #cards-container custom-card  {
         flex: 0 1 100%;
     }
-}
-
-#cards-container .card img {
-    width: 100%;
-}
-
-#cards-container .card .delete-button {
-    position: absolute;
-    top: -0.5em;
-    right: -0.5em;
-    cursor: pointer;
-}
-
-#cards-container .card .delete-button:hover,
-#cards-container .card .add-button:hover {
-    transform: scale(1.2);
-    transition: 0.1s transform;
-}
-
-#cards-container .card .add-button {
-    position: absolute;
-    bottom: 0.5em;
-    right: 0.5em;
-    cursor: pointer;
 }
 /* END MAIN */
 

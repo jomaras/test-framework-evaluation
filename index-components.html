@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>PZI - vježba</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/font-awesome.min.css"/>
+        <link rel="stylesheet" href="styles/main-components.css"/>
+        <script type="module" src="scripts/components/card.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <label>Vježba X</label>
+            <label>PZI</label>
+            <section class="search-container">
+                <i class="fa fa-search search-icon" aria-hidden="true"></i>
+                <input type="text">
+            </section>
+        </header>
+        <main>
+            <section class="main-column">
+                <section id="main-slider">
+                    <img class="main-slider-image" alt="main slider image" src="images/backgrounds/cetina.jpg"/>
+                    <nav>
+                        <div class="thumbnail selected">
+                            <img src="images/thumbnails/cetina.jpg" alt="cetina"/>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/thumbnails/kozjak.jpg" alt="kozjak"/>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/thumbnails/primosten.jpg" alt="primosten"/>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/thumbnails/sibenik.jpg" alt="sibenik"/>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/thumbnails/svilaja.jpg" alt="svilaja"/>
+                        </div>
+                    </nav>
+                </section>
+
+                <h2>Vježba 3 - CSS</h2>
+                <section id="cards-container">
+                    <custom-card>
+                        <h3 slot="header">Cetina</h3>
+                        <img slot="header-image" src="images/cardHeadings/cetina.jpg" alt="cetina"/>
+                        <p slot="text-content">
+                            Blizu Vrlike se nalazi Peručko jezero, umjetno stvoreno branom na Cetini 25 km
+                            nizvodno. Nakon jezera rijeka prolazi krškim područjem i Sinjskim poljem prema
+                            gradu Sinju. Cetina pod Gardunom, kod grada Trilja, napušta Sinjsko polje, ulazi
+                            u kanjon te teče prema jugu. Nad kanjonom je utvrda Nutjak. Obale su u kanjonu
+                            bliže i više, a rijeka duboka i spora. Nekad je voda brzo tekla i okretala brojne mlinove,
+                            ali su je brane usporile.
+                        </p>  
+                    </custom-card>
+
+                    <custom-card>
+                        <h3 slot="header">Kozjak</h3>
+                        <img slot="header-image" src="images/cardHeadings/kozjak.jpg" alt="kozjak"/>
+                        <p slot="text-content">
+                            Kozjak je planina koja sa sjeverne strane okružuje grad Kaštela.
+                            Njegova je južna padina vrlo strma i klisurasta, a sjeverni kameniti
+                            obronci postupno prelaze u valovitu visoravan Dalmatinske Zagore. <br/>
+
+                            To je u hrvatskom planinarstvu najpoznatije popularno značenje naziva Kozjak,
+                            za razliku od manje poznatog ali znatno višega Velikog Kozjaka iznad Kijeva u Dalmatinskoj Zagori,
+                            1207 m.
+                        </p>  
+                    </custom-card>
+
+                    <custom-card>
+                        <h3 slot="header">Primošten</h3>
+                        <img slot="header-image" src="images/cardHeadings/primosten.jpg" alt="primosten"/>
+                        <p slot="text-content">
+                            Tijekom turske invazije 1542., otočić na kojemu se nalazi Primošten je
+                            bio zaštićen zidovima i kulama i sa pomičnim mostom koji ga je spajao
+                            s kopnom. Kad su se Turci povukli, most je zamijenjen nasipom, a naselje
+                            je nazvano "Primošten", od riječi "primostiti" (premostiti).
+                        </p>  
+                    </custom-card>
+                    <custom-card>
+                        <h3 slot="header">Katedrala</h3>
+                        <img slot="header-image" src="images/cardHeadings/sibenik.jpg" alt="katedrala"/>
+                        <p slot="text-content">
+                            Gradnja nove katedrale simbolički je bila kulminacija višestoljetnog stremljenja grada,
+                            da se odvoji od trogirske biskupije te da i uz vlastitu crkvu stekne i komunalnu autonomiju.
+                            Podignuta je na južnoj strani središnjeg starog gradskog trga, na mjestu romaničke crkve sv. Jakova.
+                            Ideja o gradnji velikog katedralnog hrama datira od 1298. godine. kada je Šibenik dobio vlastitu
+                            biskupiju i naslov grada. Odluka o gradnji i početku pripremnih radova donesena je 1402. godine.
+                            Gradnja je međutim, započela tek 1431. godine i trajala uz prekide do 1536. godine.
+                        </p>  
+                    </custom-card>
+                    <custom-card>
+                        <h3 slot="header">Svilaja</h3>
+                        <img slot="header-image" src="images/cardHeadings/svilaja.jpg" alt="svilaja"/>
+                        <p slot="text-content">
+                            Svilaja je planina u Dalmatinskoj Zagori, usporedna s višim sjevernijim
+                            lancem Dinara-Troglav. Pruža se smjerom sjeverozapad-jugoistok između Sinjskoga
+                            i Petrovog polja u dužini oko 30 km. <br/>
+                            
+                            Najviši je južni vrh Svilaje (Bat) 1508 m iznad Sinja. Sjevernije su još važniji
+                            vrhovi Jančak 1483 m, Kita 1413 m, Turjača 1340 m , Mala Svilaja 1472 m i Lisina 1301 m
+                            iznad Vrlike. Od najbližeg grebena Veliki Kozjak (1207 m) koji je sjeverni nastavak Svilaje,
+                            ova je odvojena nižim sedlom Lemeš (860 m) iznad sela Maovice. Najveći dio lanca Svilaje
+                            je krški greben s naizmjeničnim nizom vrhova i ponikava (vrtača), te više krških jama i špilja.
+                        </p>  
+                    </custom-card>
+                </section>
+            </section>
+            <aside class="links-column">
+                <section class="links-section">
+                    <label>Linkovi</label>
+                    <nav>
+                        <ul>
+                            <li><a href="http://www.npkrka.hr/" target="_blank">Krka</a></li>
+                            <li><a href="https://hr.wikipedia.org/wiki/Kozjak" target="_blank">Kozjak</a></li>
+                            <li><a href="http://www.sibenikregion.com/hr/kulturna-bastina/unesco" target="_blank">Katedrala</a></li>
+                            <li><a href="http://primosten.hr/" target="_blank">Primošten</a></li>
+                            <li><a href="http://www.hps.hr/info/hrvatski-vrhovi/svilaja-vrh-svilaja/" target="_blank">Svilaja</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </aside>
+        </main>
+        <footer>
+            Copyright Ime i Prezime @ FESB PZI 2016
+        </footer>
+    </body>
+</html>
