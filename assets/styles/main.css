@@ -120,6 +120,9 @@ main .links-column figure img {
 
 #main-slider nav .thumbnail:hover:not(.selected) {
     border-bottom-color: var(--page-color-light-blue);
+}
+
+#main-slider nav .thumbnail:hover {
     transform: scale(1.05);
 }
 
@@ -156,6 +159,12 @@ main .links-column figure img {
     #cards-container .card {
         flex: 0 1 100%;
     }
+}
+
+#cards-section .card-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #cards-container .card img {
