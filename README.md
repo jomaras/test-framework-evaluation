@@ -1,1 +1,5 @@
-# test-framework-evaluation
+Run:
+- npm install
+- "npm run start" to see the page, runs in localhost:3002
+- "npm run test" - if the server is executed, runs the tests
+- "npm run standalone-test" - starts the server and runs the tests

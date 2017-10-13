@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node app.js",
     "cypress:open": "cypress open",
-    "test": "cypress run --browser chrome"
+    "test": "cypress run --browser chrome",
+    "standalone-test": "concurrently --kill-others --success first \"npm run start\" \"npm run test\""
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
     "express": "^4.16.1"
   },
   "devDependencies": {
+    "concurrently": "^3.5.0",
     "cypress": "^1.0.1"
   }
 }
