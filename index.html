@@ -4,8 +4,9 @@
         <meta charset="utf-8"/>
         <title>PZI - vježba</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles/font-awesome.min.css"/>
         <link rel="stylesheet" href="styles/main.css"/>
+        <link rel="stylesheet" href="styles/slider.css"/>
+        <link rel="stylesheet" href="styles/cards.css"/>
     </head>
 
     <body>
@@ -13,7 +14,7 @@
             <label>Vježba X</label>
             <label>PZI</label>
             <section class="search-container">
-                <i class="fa fa-search search-icon" aria-hidden="true"></i>
+                <span class="search-icon" aria-hidden="true">🔍</span>
                 <input type="text">
             </section>
         </header>
@@ -21,6 +22,8 @@
             <section class="main-column">
                 <section id="main-slider">
                     <img class="main-slider-image" alt="main slider image" src="images/backgrounds/cetina.jpg"/>
+                    <span class="slider-arrow slider-arrow-left">◀</span>
+                    <span class="slider-arrow slider-arrow-right">▶</span>
                     <nav>
                         <div class="thumbnail selected" data-large-image-src="images/backgrounds/cetina.jpg">
                             <img src="images/thumbnails/cetina.jpg" alt="cetina"/>
@@ -48,7 +51,7 @@
                     
                     <section id="cards-container">
                         <article class="card">
-                            <i class="fa fa-times delete-button"></i>
+                            <span class="delete-button">✖</span>
                             <img src="images/cardHeadings/cetina.jpg" alt="cetina"/>
                             <h3>Cetina</h3>
                             <p>
@@ -66,10 +69,10 @@
                                 ali su je brane usporile.
                             </p>
                 
-                            <i class="fa fa-plus add-button"></i>
+                            <span class="add-button">➕</span>
                         </article>
                         <article class="card">
-                            <i class="fa fa-times delete-button"></i>
+                            <span class="delete-button">✖</span>
                             <img src="images/cardHeadings/kozjak.jpg" alt="kozjak"/>
                             <h3>Kozjak</h3>
                             <p>
@@ -87,11 +90,11 @@
                                 mada razmjerno male visine (50 – 250 m).
                             </p>
                 
-                            <i class="fa fa-plus add-button"></i>
+                            <span class="add-button">➕</span>
                         </article>
                 
                         <article class="card">
-                            <i class="fa fa-times delete-button"></i>
+                            <span class="delete-button">✖</span>
                             <img src="images/cardHeadings/primosten.jpg" alt="primosten"/>
                             <h3>Primošten</h3>
                             <p>
@@ -110,11 +113,11 @@
                                 za jednu od 10 najljepših plaža u Hrvatskoj.
                             </p>
                 
-                            <i class="fa fa-plus add-button"></i>
+                            <span class="add-button">➕</span>
                         </article>
                 
                         <article class="card">
-                            <i class="fa fa-times delete-button"></i>
+                            <span class="delete-button">✖</span>
                             <img src="images/cardHeadings/sibenik.jpg" alt="kozjak"/>
                             <h3>Katedrala</h3>
                             <p>
@@ -130,11 +133,11 @@
                                 Gradnja je međutim, započela tek 1431. godine i trajala uz prekide do 1536. godine.
                             </p>
                 
-                            <i class="fa fa-plus add-button"></i>
+                            <span class="add-button">➕</span>
                         </article>
                 
                         <article class="card">
-                            <i class="fa fa-times delete-button"></i>
+                            <span class="delete-button">✖</span>
                             <img src="images/cardHeadings/svilaja.jpg" alt="svilaja"/>
                             <h3>Svilaja</h3>
                             <p>
@@ -150,7 +153,7 @@
                                 je krški greben s naizmjeničnim nizom vrhova i ponikava (vrtača), te više krških jama i špilja.
                             </p>
                 
-                            <i class="fa fa-plus add-button"></i>
+                            <span class="add-button">➕</span>
                         </article>
                     </section>
                 </section>
